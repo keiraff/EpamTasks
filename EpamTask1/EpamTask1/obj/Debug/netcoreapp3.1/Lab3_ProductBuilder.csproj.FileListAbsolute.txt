@@ -1,0 +1,13 @@
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\bin\Debug\netcoreapp3.1\Lab3_ProductBuilder.exe
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\bin\Debug\netcoreapp3.1\Lab3_ProductBuilder.deps.json
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\bin\Debug\netcoreapp3.1\Lab3_ProductBuilder.runtimeconfig.json
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\bin\Debug\netcoreapp3.1\Lab3_ProductBuilder.runtimeconfig.dev.json
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\bin\Debug\netcoreapp3.1\Lab3_ProductBuilder.dll
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\bin\Debug\netcoreapp3.1\Lab3_ProductBuilder.pdb
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.csprojAssemblyReference.cache
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.AssemblyInfoInputs.cache
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.AssemblyInfo.cs
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.csproj.CoreCompileInputs.cache
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.dll
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.pdb
+C:\Users\diana\source\repos\C#\Lab3_ProductBuilder\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\Lab3_ProductBuilder.genruntimeconfig.cache

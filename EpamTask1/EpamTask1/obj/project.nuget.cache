@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lpUIOPehadhItCWywB+xYfbam/49GVS6VnGf3+Ih1ElJxEaYJ05uafEWdSpj+L2l7GMqSfB0030jp8pVkniWNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\diana\\source\\repos\\EpamTasks\\EpamTask1\\EpamTask1\\EpamTask1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diana\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\diana\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
