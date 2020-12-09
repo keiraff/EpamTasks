@@ -4,89 +4,89 @@
     <!--Type>Candy</Type-->
     <Name>Alyonka</Name>
     <Weight>10</Weight>
-    <Sugar>69</Sugar>
+    <SugarContent>69</SugarContent>
     <Price>0.5</Price>
-    <Calorie>320</Calorie>
+    <CalorificValue>320</CalorificValue>
     <CandyFlavor>chocolate</CandyFlavor>
   </Component>
     <Component xsi:type = "Candy">
     <Name>Chokolapki</Name>
     <Weight>12</Weight>
-    <Sugar>30</Sugar>
+    <SugarContent>30</SugarContent>
     <Price>0.35</Price>
-    <Calorie>360</Calorie>
+    <CalorificValue>360</CalorificValue>
     <CandyFlavor>chocolate</CandyFlavor>
   </Component>
     <Component xsi:type = "Candy">
     <Name>Corovka</Name>
     <Weight>11</Weight>
-    <Sugar>65</Sugar>
+    <SugarContent>65</SugarContent>
     <Price>0.4</Price>
-    <Calorie>260</Calorie>
+    <CalorificValue>260</CalorificValue>
     <CandyFlavor>caramel</CandyFlavor>
   </Component>
     <Component xsi:type = "Candy">
     <Name>BeshenayaPchelka</Name>
     <Weight>8</Weight>
-    <Sugar>45</Sugar>
+    <SugarContent>45</SugarContent>
     <Price>0.25</Price>
-    <Calorie>250</Calorie>
+    <CalorificValue>250</CalorificValue>
     <CandyFlavor>jelly</CandyFlavor>
   </Component>
     <Component xsi:type = "Candy">
     <Name>Alyonka</Name>
     <Weight>10</Weight>
-    <Sugar>69</Sugar>
+    <SugarContent>69</SugarContent>
     <Price>0.5</Price>
-    <Calorie>320</Calorie>
+    <CalorificValue>320</CalorificValue>
     <CandyFlavor>chocolate</CandyFlavor>
   </Component>
     <Component xsi:type = "Fruit">
     <Name>Apple</Name>
     <Weight>130</Weight>
-    <Sugar>12</Sugar>
+    <SugarContent>12</SugarContent>
     <Price>0.8</Price>
-    <Calorie>80</Calorie>
-	<VitaminC>4.5</VitaminC>
+    <CalorificValue>80</CalorificValue>
+	<ContentOfVitaminC>4.5</ContentOfVitaminC>
   </Component>
     <Component xsi:type = "Fruit">
     <Name>Pear</Name>
     <Weight>180</Weight>
-    <Sugar>15</Sugar>
+    <SugarContent>15</SugarContent>
     <Price>1.1</Price>
-    <Calorie>115</Calorie>
-	<VitaminC>12</VitaminC>
+    <CalorificValue>115</CalorificValue>
+	<ContentOfVitaminC>12</ContentOfVitaminC>
   </Component>
     <Component xsi:type = "Fruit">
     <Name>Banana</Name>
     <Weight>210</Weight>
-    <Sugar>15</Sugar>
+    <SugarContent>15</SugarContent>
     <Price>1.3</Price>
-    <Calorie>135</Calorie>
-	<VitaminC>7.8</VitaminC>
+    <CalorificValue>135</CalorificValue>
+	<ContentOfVitaminC>7.8</ContentOfVitaminC>
   </Component>
     <Component xsi:type = "Fruit">
     <Name>Orange</Name>
     <Weight>120</Weight>
-    <Sugar>14</Sugar>
+    <SugarContent>14</SugarContent>
     <Price>1.4</Price>
-    <Calorie>95</Calorie>
-	<VitaminC>3.2</VitaminC>
+    <CalorificValue>95</CalorificValue>
+	<ContentOfVitaminC>3.2</ContentOfVitaminC>
   </Component>
     <Component xsi:type = "Cookie">
     <Name>Oreo</Name>
     <Weight>30</Weight>
-    <Sugar>40</Sugar>
+    <SugarContent>40</SugarContent>
     <Price>0.5</Price>
-    <Calorie>229</Calorie>
+    <CalorificValue>229</CalorificValue>
 	<CookieTaste>chocolate</CookieTaste>
   </Component>
     <Component xsi:type = "Cookie">
     <Name>Esmeralda</Name>
     <Weight>30</Weight>
-    <Sugar>45</Sugar>
+    <SugarContent>45</SugarContent>
     <Price>0.56</Price>
-    <Calorie>185</Calorie>
+    <CalorificValue>185</CalorificValue>
 	<CookieTaste>oat</CookieTaste>
   </Component>
     <Component xsi:type = "Toy">

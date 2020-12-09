@@ -63,7 +63,7 @@ namespace EpamTask1
                                 input = Console.ReadLine();
                                 temp = input.Split(new Char[] { ' ' });
                             }
-                            List<Component> list = gift.SugarContentRange(firstLimit,secondLimit);
+                            List<Component> list = gift.FindSweetnessesFromSugarContentRange(firstLimit,secondLimit);
                             foreach (var item in list)
                             {
                                 Console.WriteLine(item);

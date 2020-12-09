@@ -6,11 +6,6 @@ using System.Xml.Serialization;
 namespace EpamTask1.Components
 
 {
-    //[Serializable]
-    //[XmlArrayItem(Type = typeof(Candy))]
-    //[XmlArrayItem(Type = typeof(Cookie))]
-    //[XmlArrayItem(Type = typeof(Toy))]
-    //[XmlArrayItem(Type = typeof(Fruit))]
     [XmlInclude(typeof(Candy))]
     [XmlInclude(typeof(Cookie))]
     [XmlInclude(typeof(Toy))]
@@ -32,13 +27,13 @@ namespace EpamTask1.Components
             {
                 throw new ArgumentOutOfRangeException("Only positive number");
             }
-            else Weight = weight;
+            Weight = weight;
             Name = name;
             if (price <= 0)
             {
                 throw new ArgumentOutOfRangeException("Only positive number");
             }
-            else Price = price;
+            Price = price;
 
         }
         

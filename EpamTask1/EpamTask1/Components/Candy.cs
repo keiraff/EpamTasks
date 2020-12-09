@@ -25,9 +25,9 @@ namespace EpamTask1.Components
         }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Calorific Value: {Calorie} Price: {Price} Sugar Content: {Sugar} Candy Flavor:{CandyFlavor}";
+            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Sugar Content: {SugarContent} Candy Flavor:{CandyFlavor}";
         }
-        internal Candy()
+        public Candy()
         {
 
         }

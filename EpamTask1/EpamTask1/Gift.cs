@@ -11,13 +11,6 @@ namespace EpamTask1
 
     public class Gift
     {
-<<<<<<< HEAD
-=======
-        //[XmlArrayItem(Type = typeof(Candy))]
-        //[XmlArrayItem(Type = typeof(Cookie))]
-        //[XmlArrayItem(Type = typeof(Toy))]
-        //[XmlArrayItem(Type = typeof(Fruit))]
->>>>>>> e68b582c68fe1fc534317f1a890dbea6a67c47c0
         public List<Component> giftComponents = new List<Component>();
         public double GiftWeight
         {
@@ -53,14 +46,14 @@ namespace EpamTask1
             giftComponents.Sort(new ComparerByWeight());
 
         }
-        public List<Component> SugarContentRange(int firstLimit, int secondLimit)
+        public List<Component> FindSweetnessesFromSugarContentRange(int firstLimit, int secondLimit)
         {
             List<Component> list = new List<Component>();
             foreach (Component item in giftComponents)
             {
                 if (item is Sweetness)
                 {
-                    if ((item as Sweetness).Sugar > firstLimit && (item as Sweetness).Sugar < secondLimit)
+                    if ((item as Sweetness).SugarContent > firstLimit && (item as Sweetness).SugarContent < secondLimit)
                     {
                         list.Add(item);
                     }
@@ -98,8 +91,8 @@ namespace EpamTask1
             {
                 line.Append(item.ToString() + "\n");
             }
-            line.Append("Total Weight: " + this.GiftWeight + "\n");
-            line.Append("Total Price: " + this.GiftPrice + "\n");
+            line.Append("Total Weight: " + String.Format("{0:f2}",this.GiftWeight) + "\n");
+            line.Append("Total Price: " + String.Format("{0:f2}",this.GiftPrice) + "\n");
             return line.ToString();
         }
 
