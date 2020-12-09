@@ -11,6 +11,13 @@ namespace EpamTask1
 
     public class Gift
     {
+<<<<<<< HEAD
+=======
+        //[XmlArrayItem(Type = typeof(Candy))]
+        //[XmlArrayItem(Type = typeof(Cookie))]
+        //[XmlArrayItem(Type = typeof(Toy))]
+        //[XmlArrayItem(Type = typeof(Fruit))]
+>>>>>>> e68b582c68fe1fc534317f1a890dbea6a67c47c0
         public List<Component> giftComponents = new List<Component>();
         public double GiftWeight
         {
