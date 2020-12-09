@@ -1,7 +1,9 @@
 ﻿using EpamTask1.Components;
 using EpamTask1.Services;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
@@ -11,7 +13,7 @@ namespace EpamTask1
 
     public class Gift
     {
-        public List<Component> giftComponents = new List<Component>();
+        public IList<Component> giftComponents = new List<Component>();
         public double GiftWeight
         {
             get 
@@ -38,12 +40,16 @@ namespace EpamTask1
         }
         public void SortByPrice()
         {
-            giftComponents.Sort(new ComparerByPrice());
-            
+            IEnumerable<Component> sortedEnum = giftComponents.OrderBy(i => i.Price);
+              giftComponents=sortedEnum.ToList();
+            //giftComponents.Sort(new ComparerByPrice());
+
         }
         public void SortByWeight()
         {
-            giftComponents.Sort(new ComparerByWeight());
+            IEnumerable<Component> sortedEnum = giftComponents.OrderBy(i => i.Weight);
+            giftComponents=sortedEnum.ToList();
+            //giftComponents.Sort(new ComparerByWeight());
 
         }
         public List<Component> FindSweetnessesFromSugarContentRange(int firstLimit, int secondLimit)
