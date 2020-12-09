@@ -8,17 +8,9 @@ using System.Xml.Serialization;
 namespace EpamTask1
 {
     [Serializable]
-    [XmlInclude(typeof(Candy))]
-    [XmlInclude(typeof(Cookie))]
-    [XmlInclude(typeof(Toy))]
-    [XmlInclude(typeof(Fruit))]
 
     public class Gift
     {
-        [XmlArrayItem(Type = typeof(Candy))]
-        [XmlArrayItem(Type = typeof(Cookie))]
-        [XmlArrayItem(Type = typeof(Toy))]
-        [XmlArrayItem(Type = typeof(Fruit))]
         public List<Component> giftComponents = new List<Component>();
         public double GiftWeight
         {
@@ -70,6 +62,28 @@ namespace EpamTask1
             if (list.Count == 0) return null;
             return list;
         }
+        public void AddComponentToGift(Component component)
+        {
+            this.giftComponents.Add(component);
+        }
+        public void RemoveComponentFromGift(Component component)
+        {
+            this.giftComponents.Remove(component);
+        }
+        public void RemoveComponentFromGiftByName(string name)
+        {
+            int length = giftComponents.Count;
+            for (int i = 0; i < length; i++)
+            {
+                if ( giftComponents[i].Name == name)
+                {
+                    this.giftComponents.Remove(giftComponents[i]);
+                    i--;
+                    length--;
+                }
+            }
+        }
+
         public override string ToString()
         {
             StringBuilder line = new StringBuilder();

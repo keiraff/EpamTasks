@@ -78,6 +78,31 @@ namespace EpamTask1
                             command = Menu();
                             break;
                         }
+                    case 7:
+                        {
+                            gift.AddComponentToGift(giftBuilder.GetRandomComponent());
+                            Console.WriteLine(gift);
+                            command = Menu();
+                            break;
+                        }
+                    case 8:
+                        {
+                            Console.WriteLine("Input name of component:");
+                            string input = Console.ReadLine();
+                            gift.AddComponentToGift(giftBuilder.GetComponentByName(input));
+                            Console.WriteLine(gift);
+                            command = Menu();
+                            break;
+                        }
+                    case 9:
+                        {
+                            Console.WriteLine("Input name of component:");
+                            string input = Console.ReadLine();
+                            gift.RemoveComponentFromGiftByName(input);
+                            Console.WriteLine(gift);
+                            command = Menu();
+                            break;
+                        }
                     case 0: break;
                     default:
                         {
@@ -96,6 +121,9 @@ namespace EpamTask1
                 "4->Sort gift by weight.\n" +
                 "5->Find sweetness from sugar content range.\n" +
                 "6->Input gift information to xml file.\n" +
+                "7->Add random component to the gift.\n"+
+                "8->Add component to the gift by name.\n"+
+                "9->Remove all components by name.\n"+
                 "0->exit.\n");
             return Output();
         }

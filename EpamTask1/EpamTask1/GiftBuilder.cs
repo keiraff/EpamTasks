@@ -34,6 +34,22 @@ namespace EpamTask1
             }
             return gift;
         }
+
+        public Component GetRandomComponent()
+        {
+            return allComponents[new Random().Next(0, allComponents.Count)];
+        }
+        public Component GetComponentByName(string name)
+        {
+            foreach (var item in allComponents)
+            {
+                if (item.Name == name)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
         public Gift CreateGiftOfToys()
         {
             Gift gift = new Gift();

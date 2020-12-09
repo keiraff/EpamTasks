@@ -10,3 +10,16 @@ C:\Users\diana\source\repos\C#\EpamTask1\Lab3_ProductBuilder\obj\Debug\netcoreap
 C:\Users\diana\source\repos\C#\EpamTask1\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\EpamTask1.dll
 C:\Users\diana\source\repos\C#\EpamTask1\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\EpamTask1.pdb
 C:\Users\diana\source\repos\C#\EpamTask1\Lab3_ProductBuilder\obj\Debug\netcoreapp3.1\EpamTask1.genruntimeconfig.cache
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\bin\Debug\netcoreapp3.1\EpamTask1.exe
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\bin\Debug\netcoreapp3.1\EpamTask1.deps.json
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\bin\Debug\netcoreapp3.1\EpamTask1.runtimeconfig.json
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\bin\Debug\netcoreapp3.1\EpamTask1.runtimeconfig.dev.json
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\bin\Debug\netcoreapp3.1\EpamTask1.dll
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\bin\Debug\netcoreapp3.1\EpamTask1.pdb
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.csprojAssemblyReference.cache
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.AssemblyInfoInputs.cache
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.AssemblyInfo.cs
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.csproj.CoreCompileInputs.cache
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.dll
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.pdb
+C:\Users\diana\source\repos\EpamTasks\EpamTask1\EpamTask1\obj\Debug\netcoreapp3.1\EpamTask1.genruntimeconfig.cache
