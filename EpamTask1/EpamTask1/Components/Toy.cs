@@ -15,8 +15,8 @@ namespace EpamTask1.Components
     {
         private ToyType typeOfToy;
         public ToyType TypeOfToy { get => typeOfToy; set => typeOfToy = value; }
-        internal Toy(string name, double weight, double price, ToyType type)
-            :base(name,weight,price)
+        internal Toy(string name, double weight, double price, ToyType type, string manufacturer)
+            :base(name,weight,price,manufacturer)
         {
             TypeOfToy = type;
         }
@@ -24,7 +24,7 @@ namespace EpamTask1.Components
         { }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Price: {Price} Type of toy:{TypeOfToy}";
+            return $"Name: {Name} Weight: {Weight} Price: {Price} Manufacturer:{Manufacturer} Type of toy:{TypeOfToy}";
         }
     }
 }

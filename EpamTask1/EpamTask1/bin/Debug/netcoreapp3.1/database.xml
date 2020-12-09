@@ -1,51 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ArrayOfComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Component xsi:type = "Candy">
-    <!--Type>Candy</Type-->
+  <Component xsi:type = "ChocolateBar">
     <Name>Alyonka</Name>
     <Weight>10</Weight>
     <SugarContent>69</SugarContent>
     <Price>0.5</Price>
     <CalorificValue>320</CalorificValue>
-    <CandyFlavor>chocolate</CandyFlavor>
+	<Manufacturer>Spartak</Manufacturer>
+    <Filling>noFilling</Filling>
+	<ChocolateType>milk</ChocolateType>
   </Component>
-    <Component xsi:type = "Candy">
+    <Component xsi:type = "ChocolateBar">
     <Name>Chokolapki</Name>
     <Weight>12</Weight>
     <SugarContent>30</SugarContent>
     <Price>0.35</Price>
     <CalorificValue>360</CalorificValue>
-    <CandyFlavor>chocolate</CandyFlavor>
+	<Manufacturer>Roshen</Manufacturer>
+    <Filling>nuts</Filling>
+	<ChocolateType>milk</ChocolateType>
   </Component>
-    <Component xsi:type = "Candy">
-    <Name>Corovka</Name>
+    <Component xsi:type = "Lollipop">
+    <Name>Chupa-Chups</Name>
     <Weight>11</Weight>
     <SugarContent>65</SugarContent>
     <Price>0.4</Price>
-    <CalorificValue>260</CalorificValue>
-    <CandyFlavor>caramel</CandyFlavor>
+    <CalorificValue>130</CalorificValue>
+	<Manufacturer>Chupa-Chups</Manufacturer>
+    <Filling>bubblegum</Filling>
+	<LollipopTaste>apple</LollipopTaste>
+	<IsContainBubbleGum>true</IsContainBubbleGum>
   </Component>
-    <Component xsi:type = "Candy">
-    <Name>BeshenayaPchelka</Name>
-    <Weight>8</Weight>
+    <Component xsi:type = "Bubblegum">
+    <Name>Orbit</Name>
+    <Weight>15</Weight>
     <SugarContent>45</SugarContent>
-    <Price>0.25</Price>
+    <Price>1.2</Price>
     <CalorificValue>250</CalorificValue>
-    <CandyFlavor>jelly</CandyFlavor>
+	<Manufacturer>Orbit</Manufacturer>
+    <Filling>noFilling</Filling>
+    <BubblegumTaste>mint</BubblegumTaste>
+	<AmountInPack>10</AmountInPack>
   </Component>
-    <Component xsi:type = "Candy">
-    <Name>Alyonka</Name>
-    <Weight>10</Weight>
-    <SugarContent>69</SugarContent>
-    <Price>0.5</Price>
-    <CalorificValue>320</CalorificValue>
-    <CandyFlavor>chocolate</CandyFlavor>
+    <Component xsi:type = "ChocolateBar">
+    <Name>AlpenGold</Name>
+    <Weight>100</Weight>
+    <SugarContent>82</SugarContent>
+    <Price>2.7</Price>
+    <CalorificValue>520</CalorificValue>
+	<Manufacturer>Orbit</Manufacturer>
+    <Filling>nuts</Filling>
+    <ChocolateType>white</ChocolateType>
   </Component>
     <Component xsi:type = "Fruit">
     <Name>Apple</Name>
     <Weight>130</Weight>
     <SugarContent>12</SugarContent>
     <Price>0.8</Price>
+	<Manufacturer>Belarus</Manufacturer>
     <CalorificValue>80</CalorificValue>
 	<ContentOfVitaminC>4.5</ContentOfVitaminC>
   </Component>
@@ -54,6 +66,7 @@
     <Weight>180</Weight>
     <SugarContent>15</SugarContent>
     <Price>1.1</Price>
+	<Manufacturer>Poland</Manufacturer>
     <CalorificValue>115</CalorificValue>
 	<ContentOfVitaminC>12</ContentOfVitaminC>
   </Component>
@@ -63,6 +76,7 @@
     <SugarContent>15</SugarContent>
     <Price>1.3</Price>
     <CalorificValue>135</CalorificValue>
+	<Manufacturer>Nigeria</Manufacturer>
 	<ContentOfVitaminC>7.8</ContentOfVitaminC>
   </Component>
     <Component xsi:type = "Fruit">
@@ -71,6 +85,7 @@
     <SugarContent>14</SugarContent>
     <Price>1.4</Price>
     <CalorificValue>95</CalorificValue>
+	<Manufacturer>Spain</Manufacturer>
 	<ContentOfVitaminC>3.2</ContentOfVitaminC>
   </Component>
     <Component xsi:type = "Cookie">
@@ -79,6 +94,7 @@
     <SugarContent>40</SugarContent>
     <Price>0.5</Price>
     <CalorificValue>229</CalorificValue>
+	<Manufacturer>Nestle</Manufacturer>
 	<CookieTaste>chocolate</CookieTaste>
   </Component>
     <Component xsi:type = "Cookie">
@@ -87,21 +103,25 @@
     <SugarContent>45</SugarContent>
     <Price>0.56</Price>
     <CalorificValue>185</CalorificValue>
+	<Manufacturer>Komunarka</Manufacturer>
 	<CookieTaste>oat</CookieTaste>
   </Component>
     <Component xsi:type = "Toy">
     <Name>TeddyBear</Name>
     <Weight>200.2</Weight>
     <Price>5.5</Price>
+	<Manufacturer>Smyk</Manufacturer>
   </Component>
     <Component xsi:type = "Toy">
     <Name>Car</Name>
     <Weight>160</Weight>
     <Price>7</Price>
+	<Manufacturer>Smyk</Manufacturer>
   </Component>
     <Component xsi:type = "Toy">
     <Name>Doll</Name>
     <Weight>180</Weight>
     <Price>15</Price>
+	<Manufacturer>Smyk</Manufacturer>
   </Component>
  </ArrayOfComponent>

@@ -4,28 +4,28 @@ using System.Text;
 
 namespace EpamTask1.Components
 {
-
-    public enum FlavorType
+    public enum FillingType
     {
-        unknown,
+        noFilling,
         chocolate,
-        caramel,
         jelly,
-        bubblegum,
+        caramel,
+        nougat,
+        nuts,
+        bubblegum
     }
-    [Serializable]
-    public class Candy : Sweetness
+    public abstract class Candy : Sweetness
     {
-        private FlavorType candyFlavor;
-        public FlavorType CandyFlavor { get=>candyFlavor;  set=>candyFlavor = value;  }
-        internal Candy(string name, double weight, double price, int calorie, FlavorType flavor, int sugar)
-            : base(name, weight, price, calorie, sugar)
+        private FillingType candyFilling;
+        public FillingType Filling { get=>candyFilling; set=>candyFilling=value; }
+        protected Candy(string name, double weight, double price, int calorie, int sugar, string manufacturer, FillingType candyFilling)
+            : base(name, weight, price, calorie, sugar,manufacturer)
         {
-            CandyFlavor = flavor;
+            Filling = candyFilling;
         }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Sugar Content: {SugarContent} Candy Flavor:{CandyFlavor}";
+            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Manufacturer:{Manufacturer} Sugar Content: {SugarContent}";
         }
         public Candy()
         {

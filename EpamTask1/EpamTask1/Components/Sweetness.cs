@@ -11,29 +11,43 @@ namespace EpamTask1.Components
     public abstract class Sweetness : Component
     {
         private int calorificValue;
-        public int CalorificValue { get => calorificValue; set => calorificValue = value; }
+        public int CalorificValue
+        {
+            get => calorificValue;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Only positive number");
+                }
+                calorificValue = value;
+            }
+        }
 
         private int sugarContent;
-        public int SugarContent { get { return sugarContent; } set { sugarContent = value; } }
-        protected Sweetness(string name, double weight, double price, int calorie, int sugar)
-            : base(name, weight, price)
+        public int SugarContent
         {
-            if (sugar < 0 && sugar > 100)
+            get => sugarContent;
+            set
             {
-                throw new ArgumentOutOfRangeException("Only positive number not greater than 100");
+                if (value < 0 && value > 100)
+                {
+                    throw new ArgumentOutOfRangeException("Only positive number not greater than 100");
+                }
+                sugarContent = value;
             }
+        }
+        protected Sweetness(string name, double weight, double price, int calorie, int sugar, string manufacturer)
+            : base(name, weight, price, manufacturer)
+        {
             SugarContent = sugar;
-            if (calorie <= 0)
-            {
-                throw new ArgumentOutOfRangeException("Only positive number");
-            }
             CalorificValue = calorie;
         }
         public Sweetness()
         { }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Sugar Content: {SugarContent}";
+            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Manufacturer:{Manufacturer} Sugar Content: {SugarContent}";
         }
     }
 }
