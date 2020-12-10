@@ -13,7 +13,11 @@ namespace EpamTask1
 
     public class Gift
     {
-        public IList<Component> giftComponents = new List<Component>();
+        private IList<Component> giftComponents=new List<Component>();
+        [XmlIgnore]
+        public IList<Component> GiftComponents { get => giftComponents; set => giftComponents=value; }
+        [XmlElement]
+        public List<Component> Components { get => giftComponents.ToList(); set => giftComponents = value; }
         public double GiftWeight
         {
             get 

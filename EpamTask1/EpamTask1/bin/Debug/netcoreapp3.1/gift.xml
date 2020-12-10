@@ -1,13 +1,33 @@
 <?xml version="1.0"?>
 <Gift xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <giftComponents>
-    <Component xsi:type="Candy">
-      <Weight>11</Weight>
-      <Name>Corovka</Name>
-      <Price>0.4</Price>
-      <Calorie>260</Calorie>
-      <Sugar>65</Sugar>
-      <CandyFlavor>caramel</CandyFlavor>
-    </Component>
-  </giftComponents>
+  <Components xsi:type="ChocolateBar">
+    <Weight>12</Weight>
+    <Name>Chokolapki</Name>
+    <Manufacturer>Roshen</Manufacturer>
+    <Price>0.35</Price>
+    <CalorificValue>360</CalorificValue>
+    <SugarContent>30</SugarContent>
+    <Filling>nuts</Filling>
+    <ChocolateType>milk</ChocolateType>
+  </Components>
+  <Components xsi:type="Lollipop">
+    <Weight>11</Weight>
+    <Name>Chupa-Chups</Name>
+    <Manufacturer>Chupa-Chups</Manufacturer>
+    <Price>0.4</Price>
+    <CalorificValue>130</CalorificValue>
+    <SugarContent>65</SugarContent>
+    <Filling>bubblegum</Filling>
+    <LollipopTaste>apple</LollipopTaste>
+    <IsContainBubbleGum>true</IsContainBubbleGum>
+  </Components>
+  <Components xsi:type="Fruit">
+    <Weight>130</Weight>
+    <Name>Apple</Name>
+    <Manufacturer>Belarus</Manufacturer>
+    <Price>0.8</Price>
+    <CalorificValue>80</CalorificValue>
+    <SugarContent>12</SugarContent>
+    <ContentOfVitaminC>4.5</ContentOfVitaminC>
+  </Components>
 </Gift>

@@ -8,7 +8,7 @@ namespace EpamTask1
 {
     public class GiftBuilder
     {
-        List<Component> allComponents = Services.Serialization.DeserializationOfGift("database.xml");//ReadFromXMLfile("database.xml");
+        IList<Component> allComponents = Services.Serialization.DeserializationOfGift("database.xml");//ReadFromXMLfile("database.xml");
 
         public Gift CreateRandomGift(int amount)
         {
@@ -17,7 +17,7 @@ namespace EpamTask1
             {
                 while (amount != 0)
                 {
-                    gift.giftComponents.Add(allComponents[new Random().Next(0, allComponents.Count)]);
+                    gift.GiftComponents.Add(allComponents[new Random().Next(0, allComponents.Count)]);
                     amount--;
                 }
             }
@@ -46,7 +46,7 @@ namespace EpamTask1
             {
                 if (item is Toy)
                 {
-                    gift.giftComponents.Add(item);
+                    gift.GiftComponents.Add(item);
                 }
             }
             return gift;

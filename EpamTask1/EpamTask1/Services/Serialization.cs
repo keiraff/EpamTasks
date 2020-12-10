@@ -19,14 +19,14 @@ namespace EpamTask1.Services
             }
             return gift;
         }
-        public static List<Component> DeserializationOfGift(string fileName)
+        public static IList<Component> DeserializationOfGift(string fileName)
         {
             
             XmlSerializer formatter = new XmlSerializer(typeof(List<Component>));
-            List<Component> allPossibleComponents = new List<Component>();
+            IList<Component> allPossibleComponents = new List<Component>();
             using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
             {
-                allPossibleComponents = (List<Component>)formatter.Deserialize(fs);
+                allPossibleComponents = (IList<Component>)formatter.Deserialize(fs);
             }
             return allPossibleComponents;
         }
