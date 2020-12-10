@@ -18,6 +18,7 @@ namespace EpamTask1
         public IList<Component> GiftComponents { get => giftComponents; set => giftComponents=value; }
         [XmlElement]
         public List<Component> Components { get => giftComponents.ToList(); set => giftComponents = value; }
+        public string fileName = "gift.xml";
         public double GiftWeight
         {
             get 

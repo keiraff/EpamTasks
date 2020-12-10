@@ -24,7 +24,7 @@ namespace EpamTask1.Components
         { }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Price: {Price} Manufacturer:{Manufacturer} Type of toy:{TypeOfToy}";
+            return base.ToString() + $" Type of toy:{TypeOfToy}";
         }
     }
 }

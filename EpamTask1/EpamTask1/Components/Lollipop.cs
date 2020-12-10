@@ -31,8 +31,7 @@ namespace EpamTask1.Components
 
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Manufacturer:{Manufacturer} Sugar Content: {SugarContent}" +
-                $" Filling: {Filling} Taste: {LollipopTaste} With bubblegum: {IsContainBubbleGum}";
+            return base.ToString()+ $" Taste: {LollipopTaste} With bubblegum: {IsContainBubbleGum}";
         }
         public Lollipop()
         {

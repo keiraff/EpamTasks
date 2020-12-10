@@ -9,10 +9,10 @@ namespace EpamTask1.Services
 {
     public class Serialization
     {
-        public static Gift SerializationOfGift(Gift gift)
+        public static Gift SerializationOfGift(Gift gift, string filename)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Gift));
-            using (FileStream fs = new FileStream("gift.xml", FileMode.Create))
+            using (FileStream fs = new FileStream(filename, FileMode.Create))
             {
                 serializer.Serialize(fs, gift);
                 Console.WriteLine("Serialization is done.");

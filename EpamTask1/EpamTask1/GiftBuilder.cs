@@ -8,8 +8,7 @@ namespace EpamTask1
 {
     public class GiftBuilder
     {
-        IList<Component> allComponents = Services.Serialization.DeserializationOfGift("database.xml");//ReadFromXMLfile("database.xml");
-
+        IList<Component> allComponents = Services.Serialization.DeserializationOfGift("database.xml");
         public Gift CreateRandomGift(int amount)
         {
             Gift gift = new Gift();

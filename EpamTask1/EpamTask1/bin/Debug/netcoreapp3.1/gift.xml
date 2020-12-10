@@ -1,25 +1,12 @@
 <?xml version="1.0"?>
 <Gift xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Components xsi:type="ChocolateBar">
-    <Weight>12</Weight>
-    <Name>Chokolapki</Name>
-    <Manufacturer>Roshen</Manufacturer>
-    <Price>0.35</Price>
-    <CalorificValue>360</CalorificValue>
-    <SugarContent>30</SugarContent>
-    <Filling>nuts</Filling>
-    <ChocolateType>milk</ChocolateType>
-  </Components>
-  <Components xsi:type="Lollipop">
-    <Weight>11</Weight>
-    <Name>Chupa-Chups</Name>
-    <Manufacturer>Chupa-Chups</Manufacturer>
-    <Price>0.4</Price>
-    <CalorificValue>130</CalorificValue>
-    <SugarContent>65</SugarContent>
-    <Filling>bubblegum</Filling>
-    <LollipopTaste>apple</LollipopTaste>
-    <IsContainBubbleGum>true</IsContainBubbleGum>
+  <fileName>gift.xml</fileName>
+  <Components xsi:type="Toy">
+    <Weight>200.2</Weight>
+    <Name>TeddyBear</Name>
+    <Manufacturer>Smyk</Manufacturer>
+    <Price>5.5</Price>
+    <TypeOfToy>unisex</TypeOfToy>
   </Components>
   <Components xsi:type="Fruit">
     <Weight>130</Weight>
@@ -29,5 +16,60 @@
     <CalorificValue>80</CalorificValue>
     <SugarContent>12</SugarContent>
     <ContentOfVitaminC>4.5</ContentOfVitaminC>
+  </Components>
+  <Components xsi:type="Fruit">
+    <Weight>120</Weight>
+    <Name>Orange</Name>
+    <Manufacturer>Spain</Manufacturer>
+    <Price>1.4</Price>
+    <CalorificValue>95</CalorificValue>
+    <SugarContent>14</SugarContent>
+    <ContentOfVitaminC>3.2</ContentOfVitaminC>
+  </Components>
+  <Components xsi:type="Toy">
+    <Weight>200.2</Weight>
+    <Name>TeddyBear</Name>
+    <Manufacturer>Smyk</Manufacturer>
+    <Price>5.5</Price>
+    <TypeOfToy>unisex</TypeOfToy>
+  </Components>
+  <Components xsi:type="Fruit">
+    <Weight>180</Weight>
+    <Name>Pear</Name>
+    <Manufacturer>Poland</Manufacturer>
+    <Price>1.1</Price>
+    <CalorificValue>115</CalorificValue>
+    <SugarContent>15</SugarContent>
+    <ContentOfVitaminC>12</ContentOfVitaminC>
+  </Components>
+  <Components xsi:type="Fruit">
+    <Weight>130</Weight>
+    <Name>Apple</Name>
+    <Manufacturer>Belarus</Manufacturer>
+    <Price>0.8</Price>
+    <CalorificValue>80</CalorificValue>
+    <SugarContent>12</SugarContent>
+    <ContentOfVitaminC>4.5</ContentOfVitaminC>
+  </Components>
+  <Components xsi:type="Bubblegum">
+    <Weight>15</Weight>
+    <Name>Orbit</Name>
+    <Manufacturer>Orbit</Manufacturer>
+    <Price>1.2</Price>
+    <CalorificValue>250</CalorificValue>
+    <SugarContent>45</SugarContent>
+    <Filling>noFilling</Filling>
+    <BubblegumTaste>mint</BubblegumTaste>
+    <AmountInPack>10</AmountInPack>
+  </Components>
+  <Components xsi:type="ChocolateBar">
+    <Weight>10</Weight>
+    <Name>Alyonka</Name>
+    <Manufacturer>Spartak</Manufacturer>
+    <Price>0.5</Price>
+    <CalorificValue>320</CalorificValue>
+    <SugarContent>69</SugarContent>
+    <Filling>noFilling</Filling>
+    <ChocolateType>milk</ChocolateType>
   </Components>
 </Gift>

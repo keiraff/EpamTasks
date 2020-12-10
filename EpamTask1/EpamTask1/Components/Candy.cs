@@ -25,7 +25,7 @@ namespace EpamTask1.Components
         }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Manufacturer:{Manufacturer} Sugar Content: {SugarContent}";
+            return base.ToString()+ $" Filling: {Filling}";
         }
         public Candy()
         {

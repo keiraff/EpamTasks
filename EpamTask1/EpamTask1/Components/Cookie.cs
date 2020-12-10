@@ -24,7 +24,7 @@ namespace EpamTask1.Components
         }
         public override string ToString()
         {
-            return $"Name: {Name} Weight: {Weight} Calorific Value: {CalorificValue} Price: {Price} Manufacturer:{Manufacturer} Sugar Content: {SugarContent} Cookie Taste:{CookieTaste}";
+            return base.ToString() +$" Cookie Taste:{CookieTaste}";
         }
         public Cookie()
         { }

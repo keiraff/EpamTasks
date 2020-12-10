@@ -74,7 +74,7 @@ namespace EpamTask1
                     case 6:
                         {
                             XmlSerializer serializer = new XmlSerializer(typeof(Gift));
-                            Services.Serialization.SerializationOfGift(gift);
+                            Services.Serialization.SerializationOfGift(gift, gift.fileName);
                             command = Menu();
                             break;
                         }

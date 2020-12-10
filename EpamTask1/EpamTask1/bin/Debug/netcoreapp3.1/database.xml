@@ -88,6 +88,15 @@
 	<Manufacturer>Spain</Manufacturer>
 	<ContentOfVitaminC>3.2</ContentOfVitaminC>
   </Component>
+	<Component xsi:type = "Waffle">
+    <Name>Vitba</Name>
+    <Weight>120</Weight>
+    <SugarContent>14</SugarContent>
+    <Price>1.4</Price>
+    <CalorificValue>95</CalorificValue>
+	<Manufacturer>Spartak</Manufacturer>
+	<WaffleTaste>vanilla</WaffleTaste>
+  </Component>
     <Component xsi:type = "Cookie">
     <Name>Oreo</Name>
     <Weight>30</Weight>

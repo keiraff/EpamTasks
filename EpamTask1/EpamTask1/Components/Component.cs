@@ -55,7 +55,11 @@ namespace EpamTask1.Components
             Price = price;
             Manufacturer = manufacturer;
         }
-        
+
+        public override string ToString()
+        {
+            return $"Name: {Name} Weight: {Weight} Price: {Price} Manufacturer: {Manufacturer}";
+        }
 
     }
 }
