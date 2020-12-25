@@ -5,10 +5,10 @@ using System.Text;
 namespace EpamTask1.Components
 {
     public enum WaffleTaste
-    { 
-    chocolate,
-    vanilla,
-    cocoa,
+    {
+        chocolate,
+        vanilla,
+        cocoa,
     }
     [Serializable]
     public class Waffle : Sweetness
@@ -22,7 +22,7 @@ namespace EpamTask1.Components
         }
         public override string ToString()
         {
-            return base.ToString()+ $" Waffle Taste:{WaffleTaste}";
+            return base.ToString() + $" Waffle Taste:{WaffleTaste}";
         }
         public Waffle()
         {
@@ -30,5 +30,5 @@ namespace EpamTask1.Components
         }
 
     }
-   
+
 }
