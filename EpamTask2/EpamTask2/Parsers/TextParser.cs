@@ -100,6 +100,7 @@ namespace EpamTask2.Parsers
         }
         public Word WordParse(string wordLine, int lineNumber)
         {
+            Separators = new Separators();
             char[] prepunctuationMarks =(char[])Separators.PrepunctuationMarks();
             char[] punctuationMarks = (char[])Separators.PunctuationMarks();
             Word word = new Word(lineNumber);

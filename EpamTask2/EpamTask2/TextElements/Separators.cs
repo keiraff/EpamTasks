@@ -30,7 +30,6 @@ namespace EpamTask2.TextElements
         {
             return sentenceSeparators.AsEnumerable();
         }
-        
 
     }
 }

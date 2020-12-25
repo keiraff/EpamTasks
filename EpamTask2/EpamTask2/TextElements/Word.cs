@@ -4,12 +4,17 @@ using System.Text;
 
 namespace EpamTask2.TextElements
 {
-    internal class Word:ISentenceElement
+    internal class Word : ISentenceElement
     {
         private List<Char> letters;
         private Punctuation prepunctuation;
         private Punctuation punctuation;
         private int lineNumber;
+        private char[] vowelLetters = new char[] { 'a', 'e', 'u', 'o', 'i', 'I', 'O', 'A', 'E', 'U' };
+        public bool IsFirstLetterVowel
+        {
+                get => Array.Exists(vowelLetters, element => element == Letters[0]) ;
+        }
         public List<Char> Letters { get => letters;private set => letters = value; }
         public int LineNumberOfWord { get => lineNumber; private set => lineNumber=value; }
         public Punctuation Prepunctuation { get => prepunctuation; private set => prepunctuation = value; }

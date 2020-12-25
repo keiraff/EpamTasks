@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EpamTask2.Parsers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,6 +70,30 @@ namespace EpamTask2.TextElements
                 }
                 return sb.ToString();
             }
+        }
+        public Text DeleteAllWordsStartingWithConsonant(int wordLength)
+        {
+            TextParser parser = new TextParser();
+            for (int j = 0; j < this.Sentences.Count; j++)
+            {
+                List<Sentence> listOfSentence = this.Sentences as List<Sentence>;
+                int temp = listOfSentence[j].Words.Count;
+                List<Word> listOfWords = listOfSentence[j].Words as List<Word>;
+                for (int i = 0; i < temp; i++)
+                {
+                    
+                    if ((!listOfWords[i].IsFirstLetterVowel) && (listOfWords[i].Value.Length == wordLength))
+                    {
+                        (this.Sentences as List<Sentence>)[j].Words.Remove(listOfWords[i]);
+                        i--;
+                        temp--;
+                    }
+                    else continue;
+                }
+                (this.Sentences as List<Sentence>)[j] = parser.SentenceReparse((this.Sentences as List<Sentence>)[j].Words);
+            }
+            Text text = parser.TextReparse(this.Sentences);
+            return text;
         }
         public override string ToString()
         {
