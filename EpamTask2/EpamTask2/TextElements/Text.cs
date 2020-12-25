@@ -26,9 +26,7 @@ namespace EpamTask2.TextElements
                 sortedList.Add(item);
             }
             return sortedList;
-            //return sortedListOfSentences as List<Sentence>;
             //this.sentences.Sort(new SentComparer());
-            //this.PrintSortedText();
         }
         public string PrintSortedText()
         {
@@ -39,6 +37,38 @@ namespace EpamTask2.TextElements
                 sb.Append(Environment.NewLine);
             }
             return sb.ToString();
+        }
+
+        public string FindWordsInSpecificSentences(SentenceType type, int wordLength)
+        {
+            StringBuilder sb = new StringBuilder();
+            List<string> requestedWords = new List<string>();
+            foreach (Sentence sent in this.sentences)
+            {
+                if (sent.TypeOfSentence == type)
+                {
+                    foreach (Word word in sent.Words)
+                    {
+                        if (word.Letters.Count == wordLength && requestedWords.IndexOf(word.Value) == -1)
+                        {
+                            requestedWords.Add(word.Value);
+                        }
+                    }
+                }
+            }
+            if (requestedWords.Count == 0)
+            {
+                return $"There is no words with {wordLength} length or no {type} sentences.";
+            }
+            else
+            {
+                sb.Append($"Words with length {wordLength} from {type} sentences: "+Environment.NewLine);
+                foreach (string item in requestedWords)
+                {
+                    sb.Append(item+Environment.NewLine);
+                }
+                return sb.ToString();
+            }
         }
         public override string ToString()
         {
