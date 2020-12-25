@@ -21,6 +21,7 @@ namespace EpamTask2
             {
                 Console.WriteLine("1"+textParser.SentenceReparse(sent.Words));
             }
+            Console.WriteLine("1 task "+text.PrintSortedText());
             
         }
     }
