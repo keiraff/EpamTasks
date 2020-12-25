@@ -28,22 +28,34 @@ namespace EpamTask2.TextElements
             get
             {
                 StringBuilder sb = new StringBuilder();
-                foreach (var w in this.Words)
+                foreach (var word in this.Words)
                 {
-                    sb.Append(w.SentenceElementValue+" ");
+                    if ((Words as List<Word>).IndexOf(word) == Words.Count - 1)
+                    {
+                        sb.Append(word.SentenceElementValue);
+                    }
+                    else sb.Append(word.SentenceElementValue + " ");
                 }
                 return sb.ToString();
             }
         }
         public Sentence()
         {
-            words = new List<Word>();
+            Words = new List<Word>();
         }
         public Sentence(string value)
         {
-            words = new List<Word>();
+            Words = new List<Word>();
             TypeOfSentence = GetTypeOfSentence(value);
             Length = value.Length;
+            //Value = value;
+        }
+        public Sentence(ICollection<Word> collectionOfWords)
+        {
+            Words = collectionOfWords;
+            LineNumberOfSentence = (collectionOfWords as List<Word>)[0].LineNumberOfWord;
+            //TypeOfSentence = GetTypeOfSentence(value);
+            //Length = value.Length;
             //Value = value;
         }
         public int GetAmountOfWords

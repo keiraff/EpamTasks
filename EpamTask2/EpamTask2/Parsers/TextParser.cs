@@ -30,13 +30,13 @@ namespace EpamTask2.Parsers
                 for (int j = 0; j < splitedSentences.Length; j++)
                 {
                     int line = currentLineNumber;
-                    foreach (char symbol in splitedSentences[j])
-                    {
-                        if (symbol == '\r')
-                        {
-                            currentLineNumber++;
-                        }
-                    }
+                    //foreach (char symbol in splitedSentences[j])
+                    //{
+                        //if (symbol == '\r')
+                        //{
+                            //currentLineNumber++;
+                        //}
+                    //}
                     if (splitedSentences[j] == splitedSentences[splitedSentences.Length - 1] && !String.IsNullOrEmpty(splitedSentences[j]))//if last sentence without punctuation mark in the end
                     {                                                                                             //and if only one sentence without punctuation mark in the end
                         //buffer.Append(" ");
@@ -121,6 +121,17 @@ namespace EpamTask2.Parsers
                 else word.Letters.Add(symbol);
             }
             return word;
+        }
+        public Sentence SentenceReparse(ICollection<Word> collectionOfWords)
+        {
+            Sentence sentence = new Sentence(collectionOfWords);
+            return SentParse(sentence.Value, sentence.LineNumberOfSentence);
+        }
+
+        public Text TextReparse(ICollection<Sentence> collectionOfSentences)
+        {
+            Text text = new Text(collectionOfSentences);
+            return text;
         }
     }
 }
