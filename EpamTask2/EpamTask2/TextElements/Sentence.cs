@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EpamTask2.Parsers;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -57,6 +58,20 @@ namespace EpamTask2.TextElements
             //TypeOfSentence = GetTypeOfSentence(value);
             //Length = value.Length;
             //Value = value;
+        }
+        public Sentence ReplaceWordBySubstring(int wordLength, string substring)
+        {
+            TextParser parser = new TextParser();
+            string value = "";
+            foreach (var word in this.Words)
+            {
+                if (word.Value.Length == wordLength)
+                {
+                    value += word.Prepunctuation.Value + substring + word.Punctuation.Value + " ";
+                }
+                else value += word.Prepunctuation.Value + word.Value + word.Punctuation.Value + " ";
+            }
+            return parser.SentParse(value, this.LineNumberOfSentence);
         }
         public int GetAmountOfWords
         {

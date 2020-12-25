@@ -24,6 +24,10 @@ namespace EpamTask2
             Console.WriteLine("1 task "+text.PrintSortedText());
             Console.WriteLine("2 task " + text.FindWordsInSpecificSentences(SentenceType.Interrogative, 3));
             Console.WriteLine("3 task " + text.DeleteAllWordsStartingWithConsonant(4));
+            foreach (Sentence sent in text.Sentences)
+            {
+                Console.WriteLine("4 task " + sent.ReplaceWordBySubstring(5,"epam"));
+            }
 
         }
     }
