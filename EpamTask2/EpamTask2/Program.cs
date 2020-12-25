@@ -28,7 +28,10 @@ namespace EpamTask2
             {
                 Console.WriteLine("4 task " + sent.ReplaceWordBySubstring(5,"epam"));
             }
-
+            using (StreamWriter sw = new StreamWriter(textParser.fileForOutput, false, System.Text.Encoding.Default))
+            {
+                sw.WriteLine(text);
+            }
         }
     }
 }

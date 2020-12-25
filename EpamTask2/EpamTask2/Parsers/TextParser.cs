@@ -11,6 +11,7 @@ namespace EpamTask2.Parsers
     internal class TextParser
     {
         public string filename = "text.txt";
+        public string fileForOutput = "textOutput.txt";
         private Separators separators;
         public Separators Separators { get => separators; set => separators = value; }
         public Text Parse(TextReader reader)
