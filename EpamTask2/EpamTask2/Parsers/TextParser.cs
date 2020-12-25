@@ -10,10 +10,12 @@ namespace EpamTask2.Parsers
 {
     internal class TextParser
     {
+        public string filename = "text.txt";
         private Separators separators;
         public Separators Separators { get => separators; set => separators = value; }
         public Text Parse(TextReader reader)
         {
+            Separators = new Separators();
             int bufferlength = 10000;
             Text textResult = new Text();
             StringBuilder buffer = new StringBuilder(bufferlength);
@@ -24,27 +26,27 @@ namespace EpamTask2.Parsers
             {
                 currentString.Replace('\t', ' ');
                 currentString = string.Join(" ", currentString.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries));
-                string[] sentences = Regex.Split(currentString, @"(!|\?!|\?|\.+)");
-                for (int j = 0; j < sentences.Length; j++)
+                string[] splitedSentences = Regex.Split(currentString, Separators.SentenceSeparatorsRegEx);
+                for (int j = 0; j < splitedSentences.Length; j++)
                 {
                     int line = currentLineNumber;
-                    foreach (char symbol in sentences[j])
+                    foreach (char symbol in splitedSentences[j])
                     {
                         if (symbol == '\r')
                         {
                             currentLineNumber++;
                         }
                     }
-                    if (sentences[j] == sentences[sentences.Length - 1] && !String.IsNullOrEmpty(sentences[j]))//if last sentence without punctuation mark in the end
+                    if (splitedSentences[j] == splitedSentences[splitedSentences.Length - 1] && !String.IsNullOrEmpty(splitedSentences[j]))//if last sentence without punctuation mark in the end
                     {                                                                                             //and if only one sentence without punctuation mark in the end
                         //buffer.Append(" ");
-                        buffer.Append(sentences[j]);
+                        buffer.Append(splitedSentences[j]);
                         //textResult.Sentences.Add(SentParse(sentences[sentences.Length - 1], line));
                     }
-                    else if (sentences[j] == sentences[sentences.Length - 1] && String.IsNullOrEmpty(sentences[j])) continue;//if last sentence is empty or null
+                    else if (splitedSentences[j] == splitedSentences[splitedSentences.Length - 1] && String.IsNullOrEmpty(splitedSentences[j])) continue;//if last sentence is empty or null
                     else
                     {
-                        textResult.Sentences.Add(SentParse(buffer.Append(sentences[j] + sentences[j + 1]).ToString(), line));
+                        textResult.Sentences.Add(SentParse(buffer.Append(splitedSentences[j] + splitedSentences[j + 1]).ToString(), line));
                         buffer.Clear();
                         j++;
                     }

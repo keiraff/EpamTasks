@@ -1,4 +1,7 @@
-﻿using System;
+﻿using EpamTask2.Parsers;
+using EpamTask2.TextElements;
+using System;
+using System.IO;
 
 namespace EpamTask2
 {
@@ -6,7 +9,12 @@ namespace EpamTask2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            Text text = new Text();
+            TextParser textParser = new TextParser();
+            StreamReader sr = new StreamReader(textParser.filename);
+            text = textParser.Parse(sr);
+            Console.WriteLine(text);
         }
     }
 }

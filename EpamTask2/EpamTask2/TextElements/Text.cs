@@ -6,7 +6,20 @@ namespace EpamTask2.TextElements
 {
     internal class Text
     {
-        private List<Sentence> sentences;
-        public List<Sentence> Sentences { get => sentences; private set => sentences = value; }
+        private ICollection<Sentence> sentences;
+        public ICollection<Sentence> Sentences { get => sentences; private set => sentences = value; }
+        public Text()
+        {
+            Sentences= new List<Sentence>();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var sentence in sentences)
+            {
+                sb.Append(sentence.ToString());
+            }
+            return sb.ToString();
+        }
     }
 }

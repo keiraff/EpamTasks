@@ -12,8 +12,8 @@ namespace EpamTask2.TextElements
         private int lineNumber;
         public List<Char> Letters { get => letters;private set => letters = value; }
         public int LineNumberOfWord { get => lineNumber; private set => lineNumber=value; }
-        public Punctuation Prepunctuation { get => prepunctuation; }
-        public Punctuation Punctuation { get => punctuation; }
+        public Punctuation Prepunctuation { get => prepunctuation; private set => prepunctuation = value; }
+        public Punctuation Punctuation { get => punctuation; private set => punctuation = value; }
         public string SentenceElementValue
         {
             get
@@ -42,10 +42,13 @@ namespace EpamTask2.TextElements
         }
         public Word()
         {
-            this.letters = new List<Char>();
+            this.Letters = new List<Char>();
         }
         public Word(int lineNumber)
-        { 
+        {
+            Letters = new List<Char>();
+            Prepunctuation = new Punctuation();
+            Punctuation = new Punctuation();
             LineNumberOfWord = lineNumber;
         }
         public override string ToString()

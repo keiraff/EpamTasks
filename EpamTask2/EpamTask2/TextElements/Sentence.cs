@@ -41,6 +41,7 @@ namespace EpamTask2.TextElements
         }
         public Sentence(string value)
         {
+            words = new List<Word>();
             TypeOfSentence = GetTypeOfSentence(value);
             Length = value.Length;
             //Value = value;
