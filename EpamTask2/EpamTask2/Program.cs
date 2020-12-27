@@ -1,4 +1,5 @@
 ﻿using EpamTask2.Parsers;
+using EpamTask2.Services;
 using EpamTask2.TextElements;
 using System;
 using System.Collections.Generic;
@@ -13,8 +14,9 @@ namespace EpamTask2
             
             Text text = new Text();
             TextParser textParser = new TextParser();
-            StreamReader sr = new StreamReader(textParser.filename);
-            text = textParser.Parse(sr);
+            IO inputOutput = new IO();
+            //StreamReader sr = new StreamReader(textParser.filename);
+            text = IO.Input(IO.InputFileName);
             Console.WriteLine("111"+text);
             Console.WriteLine("2222"+textParser.TextReparse(text.Sentences));
             foreach (Sentence sent in text.Sentences)
@@ -28,10 +30,7 @@ namespace EpamTask2
             {
                 Console.WriteLine("4 task " + sent.ReplaceWordBySubstring(5,"epam"));
             }
-            using (StreamWriter sw = new StreamWriter(textParser.fileForOutput, false, System.Text.Encoding.Default))
-            {
-                sw.WriteLine(text);
-            }
+            IO.Output(IO.OutputFileName, text);
         }
     }
 }

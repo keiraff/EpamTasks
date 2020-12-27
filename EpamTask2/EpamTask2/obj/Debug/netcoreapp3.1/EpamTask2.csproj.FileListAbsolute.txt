@@ -7,7 +7,12 @@ C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\bin\Debug\netcoreapp3.
 C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.csprojAssemblyReference.cache
 C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.AssemblyInfoInputs.cache
 C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.AssemblyInfo.cs
-C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.csproj.CoreCompileInputs.cache
 C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.dll
 C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.pdb
 C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.genruntimeconfig.cache
+C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\bin\Debug\netcoreapp3.1\EpamTask2.dll.config
+C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.csproj.CopyComplete
+C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\diana\source\repos\EpamTasks\EpamTask2\EpamTask2\obj\Debug\netcoreapp3.1\EpamTask2.csproj.CoreCompileInputs.cache
