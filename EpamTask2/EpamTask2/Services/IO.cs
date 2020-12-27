@@ -35,9 +35,12 @@ namespace EpamTask2.Services
         }
         internal static Text Input(string filename)
         {
+            Text text = new Text();
             StreamReader sr = new StreamReader(filename);
             TextParser textParser = new TextParser();
-            return textParser.Parse(sr);
+            text=textParser.Parse(sr);
+            sr.Dispose();
+            return text;
         }
     }
 }
