@@ -23,8 +23,6 @@ namespace EpamTask2.Services
             AppConfiguration = builder.Build();
 
         }
-        //private static string inputFileName;
-        //private static string outputFileName;
         public static IConfiguration AppConfiguration { get; set; }
         public static string InputFileName { get => AppConfiguration["inputfile"]; } //private set => inputFileName = AppConfiguration["inputfile"]; }
         public static string OutputFileName { get => AppConfiguration["outputfile"]; }//private set => outputFileName = AppConfiguration["outputfile"]; }

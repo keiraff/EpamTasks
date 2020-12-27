@@ -13,7 +13,7 @@ namespace EpamTask2.TextElements
         Interrogative,
         NotEnded,
     }
-    internal class Sentence//:IEditable<Word>
+    internal class Sentence:IEditable<Word>
     {
         private ICollection<Word> words;
         private SentenceType typeOfSentence;
@@ -96,6 +96,14 @@ namespace EpamTask2.TextElements
                 return SentenceType.NotEnded;
             }
             else return SentenceType.Invalid;
+        }
+        public void Delete(Word word)
+        {
+            this.words.Remove(word);
+        }
+        public void Create(Word word)
+        {
+            this.words.Add(word);
         }
         public override string ToString()
         {

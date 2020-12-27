@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EpamTask2.TextElements
 {
-    internal class Text
+    internal class Text:IEditable<Sentence>
     {
         private ICollection<Sentence> sentences;
         public ICollection<Sentence> Sentences { get => sentences; private set => sentences = value; }
@@ -14,9 +14,9 @@ namespace EpamTask2.TextElements
         {
             Sentences= new List<Sentence>();
         }
-        public Text(ICollection<Sentence> collectionOfSntences)
+        public Text(ICollection<Sentence> collectionOfSentences)
         {
-            Sentences = collectionOfSntences;
+            Sentences = collectionOfSentences;
         }
         public List<Sentence> SortByNumberOfWords()
         {
@@ -94,6 +94,14 @@ namespace EpamTask2.TextElements
             }
             Text text = parser.TextReparse(this.Sentences);
             return text;
+        }
+        public void Delete(Sentence sentence)
+        {
+            this.sentences.Remove(sentence);
+        }
+        public void Create(Sentence sentence)
+        {
+            this.sentences.Add(sentence);
         }
         public override string ToString()
         {
